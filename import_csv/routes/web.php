@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/files/statistics', 'FileController@statistics')->name('file_statistics');
