@@ -7,10 +7,12 @@
 @section('content')
     <section class="file-statistics">
         <div class="container">
-            <h2>Statystyka</h2>
+            <h2>Statystyki</h2>
             <br>
-            <p>Data ostatniego importu: {{ $file->created_at }}</p>
-            <p>Ilości zaimportowanych rekordów: {{ $imported_records }}</p>
+            @if ($file) 
+                <p>Data ostatniego importu: {{ $file->created_at }}</p>
+                <p>Ilości zaimportowanych rekordów: {{ $imported_records }}</p>
+            @endif
         </div>
     </section>
 @endsection

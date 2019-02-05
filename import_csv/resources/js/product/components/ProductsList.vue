@@ -1,6 +1,9 @@
 <template>
     <section class="products">
         <div class="container">
+            <h2>Produkty</h2>
+            <br>
+            
             <div class="row">
                 <div class="col-md-5">
                     <form class="form-inline form-search" v-on:submit.prevent="search()">
