@@ -1,0 +1,22 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '../global/_global';
+
+.form-search {
+    margin-bottom: 30px;
+    input.form-control {
+        width: 255px;
+    }
+    button {
+        margin-left: 10px;
+    }
+}
+
+.pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    .page-item:first-child {
+        margin-right: 10px;
+    }
+}

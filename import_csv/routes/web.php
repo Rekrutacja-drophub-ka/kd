@@ -11,4 +11,5 @@
 |
 */
 
+Route::get('/', 'ProductController@index')->name('home');
 Route::get('/files/statistics', 'FileController@statistics')->name('file_statistics');

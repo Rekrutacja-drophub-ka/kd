@@ -11,4 +11,6 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/sass/file/statistics.scss', 'public/css/file');
+mix.js('resources/js/product/index.js', 'public/js/product')
+    .sass('resources/sass/product/index.scss', 'public/css/product')
+    .sass('resources/sass/file/statistics.scss', 'public/css/file');
